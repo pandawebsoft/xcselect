@@ -3,7 +3,7 @@
 #include <dirent.h>
 #include <string.h>
 
-#define VERSION "1.0.0(8)"
+#define VERSION "1.0.0(10)"
 
 #define GRN	"\x1B[32m"
 #define RESET "\x1B[0m"
