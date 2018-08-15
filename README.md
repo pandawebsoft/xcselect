@@ -14,13 +14,13 @@ ex.
 
 ## Installation
 ```
-git clone https://github.com/pandawebsoft/tmp.git --depth 1 \
+git clone https://github.com/pandawebsoft/xcselect.git --depth 1 ./tmp \
 && ./tmp/tools/install && rm -rf tmp
 ```
 
 ## Uninstallation
 ```
-git clone https://github.com/pandawebsoft/tmp.git --depth 1 \
+git clone https://github.com/pandawebsoft/xcselect.git --depth 1 ./tmp \
 && ./tmp/tools/uninstall && rm -rf tmp
 ```
 
