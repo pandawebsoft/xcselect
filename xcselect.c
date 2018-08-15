@@ -39,7 +39,7 @@ int main(int argc, char* argv[])
 
 void usage()
 {
-    printf("Usage: \n\n    $ %sxcselect%s <xcode_version> [--version]\n\nex.\n    $ xcselect 9.4.1\n    $ xcselect 8.2.1\n    $ xcselect 7.3.1\n\n", GRN, RESET);
+    printf("Usage: \n\n    $ %sxcselect%s <xcode_version> [--version] [--help]\n\nex.\n    $ xcselect 9.4.1\n    $ xcselect 8.2.1\n    $ xcselect 7.3.1\n\n", GRN, RESET);
 }
 
 void print_version()

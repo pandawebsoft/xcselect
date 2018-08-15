@@ -2,12 +2,10 @@
 
 `xcselect` is a small command line tool based `xcode-select` but more flexible and easy to use.
 
-## Requirement
-- xcode-select
 
 ## Usage
 ```
-$ xcselect <xcode_version> [--version]
+$ xcselect <xcode_version> [--version] [--help]
 ```
 
 ## Examples
