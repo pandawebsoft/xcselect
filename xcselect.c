@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define VERSION "1.0.0(12)"
+#define VERSION "1.1.0(14)"
 
 #define GRN "\x1B[32m"
 #define RESET "\x1B[0m"
