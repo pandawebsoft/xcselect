@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <dirent.h>
 #include <string.h>
 
 #define VERSION "1.0.0(12)"
@@ -84,19 +83,13 @@ char* find_xcode_path(const char *version)
         char *xcode_version = strsep(&line,",");
         char *xcode_path = strsep(&line,",");
         lntrim(xcode_path);
-        if (xcode_version != NULL && xcode_path != NULL) 
+        if (xcode_version != NULL && xcode_path != NULL && strstr(xcode_version, version) != NULL) 
         {
-            printf("version: %s\n",xcode_version);
-            printf("path: %s\n",xcode_path);
-            if (strstr(xcode_version, version) != NULL)
-            {
-                char *tmp_path = "/Contents/Developer";
-                char *found_path = (char *) malloc(1 + strlen(xcode_path) + strlen(tmp_path));
-                strcpy(found_path, xcode_path);
-                strcat(found_path, tmp_path);
-                printf("found_path: %s\n",found_path);
-                return found_path;
-            }
+            char *tmp_path = "/Contents/Developer";
+            char *found_path = (char *) malloc(1 + strlen(xcode_path) + strlen(tmp_path));
+            strcpy(found_path, xcode_path);
+            strcat(found_path, tmp_path);
+            return found_path;
         }
     }
 
