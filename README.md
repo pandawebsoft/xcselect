@@ -21,7 +21,7 @@ $ xcselect 7.3.1
 ## Install Xcselect
 
 ### Homebrew
-If you have [Homebrew](http://brew.sh/) installed, install Xcselect via
+If you have [Homebrew][1] installed, install Xcselect via
 
 ```
 $ brew tap pandawebsoft/xcselect && brew install xcselect
@@ -48,3 +48,10 @@ $ brew uninstall xcselect && brew untap pandawebsoft/xcselect
 $ git clone https://github.com/pandawebsoft/xcselect.git --depth 1 ./tmp && ./tmp/tools/uninstall && rm -rf tmp
 ```
 
+## License
+
+The [MIT license][2]
+
+
+ [1]: http://brew.sh/
+ [2]: https://github.com/pandawebsoft/xcselect/blob/master/LICENSE
